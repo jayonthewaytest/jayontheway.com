@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resources & Legal – Jay On The Way</title>
+
+    <!-- Bootstrap 5.3 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <style>
+        .resource-header {
+            padding-top: 150px;
+            padding-bottom: 80px;
+            background: radial-gradient(circle at 50% 50%, rgba(196, 30, 58, 0.2), transparent 60%);
+        }
+        
+        .nav-pills .nav-link {
+            color: var(--text-muted);
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid var(--glass-border);
+            border-radius: 50px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            padding: 10px 25px;
+            transition: all 0.3s ease;
+        }
+        
+        .nav-pills .nav-link.active, .nav-pills .nav-link:hover {
+            background: var(--primary-red);
+            color: white;
+            border-color: var(--primary-red);
+        }
+
+        .accordion-item {
+            background: var(--bg-card);
+            border: 1px solid var(--glass-border);
+            margin-bottom: 1rem;
+            border-radius: 12px !important;
+            overflow: hidden;
+        }
+
+        .accordion-button {
+            background: transparent;
+            color: white;
+            font-weight: 600;
+            box-shadow: none !important;
+        }
+
+        .accordion-button:not(.collapsed) {
+            background: rgba(196, 30, 58, 0.1);
+            color: var(--secondary-red);
+        }
+
+        .accordion-body {
+            color: #f8f9fa;
+            border-top: 1px solid var(--glass-border);
+        }
+
+        .legal-content h3 {
+            color: white;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+
+        .legal-content p, .legal-content li {
+            color: #f8f9fa;
+            line-height: 1.7;
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">JAY ON THE WAY</a>
+            <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navMenu">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#roadmaps">Roadmaps</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#videos">Videos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
+                    <li class="nav-item">
+                        <a class="btn btn-light ms-lg-3" href="https://details.fillout.com/mentorship" target="_blank">Book Call</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HEADER -->
+    <header class="resource-header text-center">
+        <div class="container">
+            <h1 class="display-4 fw-bold text-white mb-3">Resources & Legal</h1>
+            <p class="lead text-white mx-auto" style="max-width: 700px;">
+                Everything you need to know about our services, policies, and how we can help you succeed.
+            </p>
+            
+            <ul class="nav nav-pills justify-content-center mt-5" id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="pills-faq-tab" data-bs-toggle="pill" data-bs-target="#pills-faq" type="button" role="tab">FAQs</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-privacy-tab" data-bs-toggle="pill" data-bs-target="#pills-privacy" type="button" role="tab">Privacy Policy</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-terms-tab" data-bs-toggle="pill" data-bs-target="#pills-terms" type="button" role="tab">Terms of Service</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-support-tab" data-bs-toggle="pill" data-bs-target="#pills-support" type="button" role="tab">Support</button>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- CONTENT SECTIONS -->
+    <section class="py-5">
+        <div class="container">
+            <div class="tab-content" id="pills-tabContent">
+                
+                <!-- FAQs -->
+                <div class="tab-pane fade show active" id="pills-faq" role="tabpanel">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="accordion" id="accordionFaq">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                                            How do I receive my roadmap after purchase?
+                                        </button>
+                                    </h2>
+                                    <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#accordionFaq">
+                                        <div class="accordion-body">
+                                            After a successful payment, you will receive an email with a download link to your PDF roadmap immediately. If you don't see it, please check your spam/promotions folder or contact support.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                                            Can I book a 1:1 call without buying a roadmap?
+                                        </button>
+                                    </h2>
+                                    <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#accordionFaq">
+                                        <div class="accordion-body">
+                                            Yes! You can book a personalized guidance call directly through our "Book Call" section on the homepage, regardless of whether you've purchased a roadmap.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                                            Are the roadmaps updated?
+                                        </button>
+                                    </h2>
+                                    <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#accordionFaq">
+                                        <div class="accordion-body">
+                                            We review our roadmaps periodically to ensure the information, tools, and strategies are up-to-date with current industry standards.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                                            What payment methods do you accept?
+                                        </button>
+                                    </h2>
+                                    <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#accordionFaq">
+                                        <div class="accordion-body">
+                                            We accept all major Indian payment methods including UPI, Credit/Debit Cards, and Net Banking through our secure payment gateway.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Privacy Policy -->
+                <div class="tab-pane fade" id="pills-privacy" role="tabpanel">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8 legal-content">
+                            <h3>1. Information We Collect</h3>
+                            <p>We collect information you provide directly to us, such as when you create an account, make a purchase, or communicate with us. This may include your name, email address, phone number, and payment information.</p>
+                            
+                            <h3>2. How We Use Your Information</h3>
+                            <p>We use the information we collect to provide, maintain, and improve our services, process transactions, send you technical notices and support messages, and communicate with you about products, services, offers, and events.</p>
+                            
+                            <h3>3. Data Security</h3>
+                            <p>We implement reasonable security measures to protect the security of your personal information. However, please be aware that no method of transmission over the internet or method of electronic storage is 100% secure.</p>
+                            
+                            <h3>4. Third-Party Services</h3>
+                            <p>We may share your information with third-party vendors, consultants, and other service providers who need access to such information to carry out work on our behalf, such as payment processing and email delivery.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Terms of Service -->
+                <div class="tab-pane fade" id="pills-terms" role="tabpanel">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8 legal-content">
+                            <h3>1. Acceptance of Terms</h3>
+                            <p>By accessing or using our website and services, you agree to be bound by these Terms of Service. If you do not agree to all the terms and conditions, then you may not access the website or use any services.</p>
+                            
+                            <h3>2. Intellectual Property</h3>
+                            <p>All content included on this site, such as text, graphics, logos, images, digital downloads, and roadmaps, is the property of Jay On The Way and protected by international copyright laws. You may not resell, redistribute, or share our digital products.</p>
+                            
+                            <h3>3. Refund Policy</h3>
+                            <p>Due to the digital nature of our roadmaps, all sales are final. Refunds are only considered in exceptional circumstances where a file is corrupted or undeliverable.</p>
+                            
+                            <h3>4. Limitation of Liability</h3>
+                            <p>In no event shall Jay On The Way be liable for any indirect, incidental, special, consequential or punitive damages, including without limitation, loss of profits, data, use, goodwill, or other intangible losses.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Support -->
+                <div class="tab-pane fade" id="pills-support" role="tabpanel">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8 text-center">
+                            <div class="card roadmap-card p-5">
+                                <div class="card-body">
+                                    <i class="fa-solid fa-headset fa-4x text-danger mb-4"></i>
+                                    <h3 class="fw-bold text-white mb-3">Need Help?</h3>
+                                    <p class="text-white mb-4">
+                                        We are here to assist you. If you have any issues with your order, need technical support, or just want to say hi, drop us an email.
+                                    </p>
+                                    <h4 class="text-white mb-2">Email Us At</h4>
+                                    <a href="mailto:jayananudi@gmail.com" class="fs-4 fw-bold text-danger text-decoration-none">jayananudi@gmail.com</a>
+                                    
+                                    <p class="text-white mt-4 small">
+                                        We typically respond within 24 hours. Please check your spam folder if you haven't heard back.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <h5 class="fw-bold mb-3">Jay On The Way</h5>
+                    <p class="text-muted small">Built for Everything. Helping you navigate your career, skills, and
+                        business with structured roadmaps and personal guidance.</p>
+                    <div class="social-links mt-4">
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="#"><i class="fa-regular fa-envelope"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <h6 class="text-white mb-4">Quick Links</h6>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="index.html">Home</a></li>
+                        <li class="mb-2"><a href="index.html#roadmaps">Roadmaps</a></li>
+                        <li class="mb-2"><a href="index.html#call">Book Call</a></li>
+                        <li class="mb-2"><a href="index.html#videos">Videos</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <h6 class="text-white mb-4">Resources</h6>
+                    <ul class="list-unstyled">
+                        <!-- Updated links to point to specific tabs via JS or anchors if preferred, 
+                             but using generic link to page + tab activation logic would be ideal. 
+                             For simplicity, linking to the page. User can navigate tabs. -->
+                        <li class="mb-2"><a href="resources.html">FAQs</a></li>
+                        <li class="mb-2"><a href="resources.html">Privacy Policy</a></li>
+                        <li class="mb-2"><a href="resources.html">Terms of Service</a></li>
+                        <li class="mb-2"><a href="resources.html">Support</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h6 class="text-white mb-4">Stay Updated</h6>
+                    <p class="small text-muted mb-4">Subscribe for job alerts and business opportunities.</p>
+                    <div class="input-group newsletter-group">
+                        <input type="email" class="form-control newsletter-input" placeholder="your@email.com">
+                        <button class="btn btn-gradient newsletter-btn" type="button">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-5 pt-4 border-top border-secondary border-opacity-25">
+                <small class="text-muted">© 2026 Jay On The Way. Made with ❤️ in India.</small>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Simple Script to handle hash navigation for tabs -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Check if there is a hash in the URL
+            if(window.location.hash) {
+                // Map hashes to tab IDs
+                const hash = window.location.hash;
+                let tabId = '';
+                
+                if(hash === '#faq') tabId = '#pills-faq-tab';
+                if(hash === '#privacy') tabId = '#pills-privacy-tab';
+                if(hash === '#terms') tabId = '#pills-terms-tab';
+                if(hash === '#support') tabId = '#pills-support-tab';
+                
+                if(tabId) {
+                    const triggerEl = document.querySelector(tabId);
+                    if(triggerEl) {
+                        const tab = new bootstrap.Tab(triggerEl);
+                        tab.show();
+                    }
+                }
+            }
+            
+            // Navbar Background Change on Scroll (from main.js)
+            window.addEventListener('scroll', function () {
+                const navbar = document.getElementById('mainNav');
+                if (window.scrollY > 100) {
+                    navbar.classList.add('scrolled');
+                } else {
+                    navbar.classList.remove('scrolled');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
